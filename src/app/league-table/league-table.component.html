@@ -1,0 +1,22 @@
+<div id="leagueTable">
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Played</th>
+      <th (click)="orderByWins()"><img src="../../assets/down-arrow.svg" alt="arrow">  Won</th>
+      <th (click)="orderByGoals()"><img src="../../assets/down-arrow.svg" alt="arrow">  Goals Scored</th>
+      <th>Draw</th>
+      <th>Defeats</th>
+      <th (click)='orderByPoints()'><img src="../../assets/down-arrow.svg" alt="arrow">  Points</th>
+    </tr>
+    <tr *ngFor='let team of leagueTeams'>
+      <td>{{team.clubName}}</td>
+      <td>{{team.numberOfMatchesPlayed}}</td>
+      <td>{{team.numberOfWins}}</td>
+      <td>{{team.numberOfGoalsScored}}</td>
+      <td>{{team.numberOfDraws}}</td>
+      <td>{{team.numberOfDefeats}}</td>
+      <td>{{team.numberOfPoints}}</td>
+    </tr>
+  </table>
+</div>
