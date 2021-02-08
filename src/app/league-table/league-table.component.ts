@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ILeagueTeams } from "../league-teams.model";
+import { ILeagueTeams } from '../league-teams.model';
 import {PremierLeagueService} from "../services/premier-league.service";
 @Component({
   selector: 'app-league-table',
