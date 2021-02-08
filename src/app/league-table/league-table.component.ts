@@ -54,4 +54,28 @@ export class LeagueTableComponent implements OnInit {
       this.leagueTeams.sort(this.assendingOrderOfGoals)
     }
   }
+
+  desendingOrderOfPoints(firstTeam:ILeagueTeams,secondTeam:ILeagueTeams){
+    return firstTeam.numberOfPoints - secondTeam.numberOfPoints;
+  }
+
+  assendingOrderOfPoints(firstTeam:ILeagueTeams,secondTeam:ILeagueTeams){
+    return secondTeam.numberOfPoints - firstTeam.numberOfPoints;
+  }
+
+  desendingOrderOfWins(firstTeam:ILeagueTeams,secondTeam:ILeagueTeams){
+    return firstTeam.numberOfWins - secondTeam.numberOfWins;
+  }
+
+  assendingOrderOfWins(firstTeam:ILeagueTeams,secondTeam:ILeagueTeams){
+    return secondTeam.numberOfWins - firstTeam.numberOfWins;
+  }
+
+  desendingOrderOfGoals(firstTeam:ILeagueTeams,secondTeam:ILeagueTeams){
+    return firstTeam.numberOfGoalsScored - secondTeam.numberOfGoalsScored;
+  }
+
+  assendingOrderOfGoals(firstTeam:ILeagueTeams,secondTeam:ILeagueTeams){
+    return secondTeam.numberOfGoalsScored - firstTeam.numberOfGoalsScored;
+  }
 }
