@@ -34,4 +34,24 @@ export class LeagueTableComponent implements OnInit {
       this.leagueTeams.sort(this.assendingOrderOfPoints)
     }
   }
+
+  orderByWins(){
+    if(!this.winsDescendingOrder){
+      this.winsDescendingOrder = true
+      this.leagueTeams.sort(this.desendingOrderOfWins)
+    }else{
+      this.winsDescendingOrder = false
+      this.leagueTeams.sort(this.assendingOrderOfWins)
+    }
+  }
+
+  orderByGoals(){
+    if(!this.goalsDescendingOrder){
+      this.goalsDescendingOrder = true
+      this.leagueTeams.sort(this.desendingOrderOfGoals)
+    }else{
+      this.goalsDescendingOrder = false
+      this.leagueTeams.sort(this.assendingOrderOfGoals)
+    }
+  }
 }
