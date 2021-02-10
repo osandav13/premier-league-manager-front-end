@@ -1,0 +1,52 @@
+#matchHistoryTable{
+  background-color: #ffffff;
+  /* width: 80%; */
+  /* margin-left: 80px; */
+  margin-top: 5px;
+}
+table{
+  background-color: #ffffff;
+  border-collapse: collapse;
+  table-layout: fixed;
+  border-radius:6px;
+  width: 80%;
+  margin-left: 150px;
+}
+th{
+  height: 50px;
+  color: #ffffff;
+  background-color: #963cff;
+
+}
+
+
+thead th :nth-child(1){
+  width: 40%;
+}
+
+thead th :nth-child(2){
+  width: 20%;
+}
+thead th :nth-child(3){
+  width: 30%;
+}
+thead th :nth-child(4){
+  width: 10%;
+}
+td{
+  text-align: center;
+}
+
+tr {
+  border-bottom: solid  #e8f3f7;
+  border-width: 3px 0;
+}
+
+tr:first-child {
+  border-top: none;
+  /* border-bottom: none; */
+}
+
+tr:last-child {
+  border-bottom: none;
+}
