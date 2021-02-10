@@ -1,1 +1,21 @@
-<p>match-history works!</p>
+<button (click)='playMatch()' id="btn">Play</button>
+<div id="search">
+  <input id="search-box" type="text" placeholder="Enter the date" #input>
+  <button id="search-button" type="button"(click)="getMatchDate(input.value)"><img id="search-img" src="../../assets/untitled (1).svg" alt="search"></button>
+</div>
+<div id="matchHistoryTable">
+  <table>
+    <tr>
+      <th>Match</th>
+      <th>Date</th>
+      <th>Winner</th>
+      <th>Score</th>
+    </tr>
+    <tr *ngFor='let match of matchDetails'>
+      <td>{{match.matchName}}</td>
+      <td>{{match.matchDate}}</td>
+      <td>{{match.winner}}</td>
+      <td>{{match.score}}</td>
+    </tr>
+  </table>
+</div>
