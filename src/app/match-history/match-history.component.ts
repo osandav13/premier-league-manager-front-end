@@ -17,10 +17,18 @@ export class MatchHistoryComponent implements OnInit {
       .subscribe(matchs => {
         for(const match in matchs){
           this.matchDetails.push(matchs[match]);
-          this.dateAssendingOrder();
+          this.dateAscendingOrder();
         }
       });
   }
 
-
+  dateAscendingOrder(){
+    this.matchDetails.sort((a, b) => {
+      const c = Number(a.matchDate.split('-').join(''));
+      const d = Number(b.matchDate.split('-').join(''));
+      // const c   = Number(a)
+      // const d   = Number(b)
+      return c - d;
+    });
+  }
 }
