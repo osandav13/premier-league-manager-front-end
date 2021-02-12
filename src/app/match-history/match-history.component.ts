@@ -31,4 +31,14 @@ export class MatchHistoryComponent implements OnInit {
       return c - d;
     });
   }
+
+  getMatchDate(input: any){
+    this.service.fetchMatchshearchDetails(input)
+      .subscribe(matchs => {
+        this.matchDetails.length = 0;
+        for(const match in matchs){
+          this.matchDetails.push(matchs[match]);
+        }
+      });
+  }
 }
