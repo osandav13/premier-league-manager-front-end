@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<div class="wrapper">
+  <div class="sidebar">
+    <Img id="logo" src='../assets/logo-v1.1.png'>
+    <ul>
+      <li routerLinkActive="side-bar-item"><a routerLink="/leagueTable"><img id="score" src="../assets/rank.svg" alt=""> League table</a></li>
+      <li routerLinkActive="side-bar-item"><a routerLink="/matchHistory"><img  src="../assets/scoreboard.svg" alt=""> Match history</a></li>
+    </ul>
+  </div>
+  <div class="main_content">
+    <div class="header">Welcome to Premier League</div>
+    <router-outlet></router-outlet>
+  </div>
+</div>
+</body>
+</html>
