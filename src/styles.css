@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+*,html{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+  background-color: #f3f5f9;
+}
+
+.wrapper{
+  display: flex;
+  position: relative;
+}
+
+.wrapper .sidebar{
+  width: 200px;
+  height: 100%;
+  background: #37003c;
+  box-shadow: 7px 0px 8px #666869;
+  position: fixed;
+}
+
+#logo{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 12px;
+}
+
